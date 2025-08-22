@@ -3,7 +3,6 @@ import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
 import leetcode from "../assets/leetcode.svg";
 import { Typewriter } from "react-simple-typewriter";
-import React from "react";
 
 export default function Home() {
   const handleType = (count: number) => {
