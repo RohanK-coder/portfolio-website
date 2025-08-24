@@ -2,6 +2,10 @@ import myimage from "../assets/myimage.jpeg";
 import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
 import leetcode from "../assets/leetcode.svg";
+import gmail from "../assets/gmail.svg"
+import instagram from "../assets/instagram.svg"
+import discord from "../assets/discord.svg"
+import twitter from "../assets/twitter.svg"
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
@@ -14,7 +18,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-gray-900 to-gray-500 w-full h-full flex flex-col md:flex-row">
+    <div className="bg-gradient-to-r from-gray-900 to-gray-500 w-full h-screen flex flex-col md:flex-row overflow-hidden">
       {/* Left Side - Image */}
       <div className="w-full md:w-[30%] h-[300px] md:h-screen flex items-center justify-center mt-6 md:mt-0">
         <img
@@ -53,49 +57,95 @@ export default function Home() {
           </p>
         </div>
 
-        <p className="text-gray-400 text-xs sm:text-sm mt-2 text-center md:text-left">
-          *please browse through using the navigation panel on top*
-        </p>
+        
+        
 
         {/* Social Links */}
-        <div className="w-full md:w-[400px] h-[60px] mt-4 flex flex-row gap-4 items-center justify-center md:justify-start">
-          <a
-            href="https://www.linkedin.com/in/rohan-kommathoti-108055216/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={linkedin}
-              alt="LinkedIn"
-              className="cursor-pointer w-8 h-8 md:w-10 md:h-10"
-            />
-          </a>
+        
+            
+            <div className="w-full md:w-[400px] h-[60px] mt-4 flex flex-row gap-4 items-center justify-between md:justify-start border-2 bg-gray-600 rounded-md">
+              <a
+                href="https://www.linkedin.com/in/rohan-kommathoti-108055216/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={linkedin}
+                  alt="LinkedIn"
+                  className="cursor-pointer w-8 h-8 md:w-10 md:h-10"
+                />
+              </a>
 
-          <a
-            href="https://github.com/RohanK-coder"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={github}
-              alt="GitHub"
-              className="cursor-pointer w-8 h-8 md:w-10 md:h-10"
-            />
-          </a>
+              <a
+                href="https://github.com/RohanK-coder"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={github}
+                  alt="GitHub"
+                  className="cursor-pointer w-8 h-8 md:w-10 md:h-10"
+                />
+              </a>
 
-          <a
-            href="https://leetcode.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={leetcode}
-              alt="LeetCode"
-              className="cursor-pointer w-8 h-8 md:w-10 md:h-10"
-            />
-          </a>
-        </div>
-      </div>
+              <a
+                href="https://leetcode.com/u/kyrohan7730/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={leetcode}
+                  alt="LeetCode"
+                  className="cursor-pointer w-8 h-8 md:w-10 md:h-10"
+                />
+              </a>
+              <a
+                href="mailto:rohankommathoti22@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={gmail}
+                  alt="G-Mail"
+                  className="cursor-pointer w-8 h-8 md:w-10 md:h-10"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/rohan_k22/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={instagram}
+                  alt="Instagram"
+                  className="cursor-pointer w-8 h-8 md:w-10 md:h-10"
+                />
+              </a>
+              <a
+                href="https://discordapp.com/users/rohan_k22"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={discord}
+                  alt="Discord"
+                  className="cursor-pointer w-8 h-8 md:w-10 md:h-10"
+                />
+              </a>
+              <a
+                href="https://x.com/RohanKommathot2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={twitter}
+                  alt="Twitter"
+                  className="cursor-pointer w-8 h-8 md:w-10 md:h-10"
+                />
+              </a>
+            </div>
+          </div>
+        
     </div>
   );
 }

@@ -13,10 +13,10 @@ import { useNavigate } from "react-router-dom";
 
 const pages = [
   { label: "Home", path: "/" },
+  { label: "Education", path: "/education" },
   { label: "Projects", path: "/projects" },
   { label: "Open-Source", path: "/open-source" },
   { label: "Articles", path: "/articles" },
-  { label: "Reach-Out", path: "/reach-out" },
 ];
 
 function ResponsiveAppBar() {
